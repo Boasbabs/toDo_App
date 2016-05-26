@@ -1,5 +1,5 @@
-var app = angular.module('Todo', []);
+var app = angular.module("Todo", []);
 
-app.controller('Todo', function() {
-  
+app.controller("TodoCtrl", function ($scope) {
+	$scope.message = "Angular is pretty cool.";
 });
