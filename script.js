@@ -6,4 +6,11 @@ app.controller("TodoCtrl", function ($scope) {
 		"Look at Dribble and feel inferior",
 		"Actually learn how to use the Pen tool"
 	];
+
+	$scope.done = function(todo) {
+		var indexOf = $scope.todos.indexOf(todo);
+		if (indexOf !== -1) {
+			$scope.todos.splice(indexOf, 1);
+		}
+	};
 });
